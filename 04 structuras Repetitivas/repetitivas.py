@@ -58,3 +58,42 @@ while num_final <= 0:
 for i in range(num_inicial, num_final+1):
     sumatoria += i
 print("Sumatoria:", sumatoria)
+
+# Ejercicio 8
+par = 0
+impar = 0
+positivos = 0
+negativos = 0
+for i in range(100):
+    num = int(input("Ingrese un número entero:"))
+    if num % 2 == 0:
+        par += 1
+    else:
+        impar += 1
+    if num > 0:
+        positivos += 1
+    elif num < 0:
+        negativos += 1
+print("Cantidad de números pares:", par)
+print("Cantidad de números impares:", impar)
+print("Cantidad de números positivos:", positivos)
+print("Cantidad de números negativos:", negativos)
+
+# Ejercicio 9
+sumatoria = 0
+for i in range(100):
+    num = int(input("Ingrese un número entero:"))
+    sumatoria += num
+promedio = sumatoria / 100
+print("Promedio:", promedio)
+
+# Ejercicio 10
+num = int(input("Ingrese un número: "))
+invertido = 0
+
+while num > 0:
+    digito = num % 10        # tomo el último dígito
+    invertido = invertido * 10 + digito
+    num //= 10               # elimino el último dígito
+
+print("Número invertido:", invertido)
