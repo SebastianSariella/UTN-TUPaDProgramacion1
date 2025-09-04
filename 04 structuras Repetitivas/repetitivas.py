@@ -35,8 +35,8 @@ while num != 0:
 print("Sumatoria total:", sumatoria)
 
 # Ejercicio 5
-num = random.randint(1, 10)
-num_user = int(input("Adivina el número (entre 1 y 10): "))
+num = random.randint(0, 9)
+num_user = int(input("Adivina el número (entre 0 y 9): "))
 intentos = 1
 while num_user != num:
     num_user = int(input("Incorrecto. Intenta de nuevo: "))
